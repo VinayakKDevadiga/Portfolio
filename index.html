@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Padyakke+Expanded+One&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Vinayak portfolio</title>s
+    <script>
+        function smoothScroll(home) {
+            var element = document.querySelector(home);
+            element.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        function gitHub(){
+            window.location="https://github.com/VinayakKDevadiga";
+        }
+    function linkedIn(){
+            window.location="https://www.linkedin.com/in/vinayak-k-devadiga";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Vinayak portfolio</div>
+            <div class="right">
+                <ul>
+                    <!-- <li><a href="#home" >home</a></li> -->
+                    <li><button onclick="smoothScroll('#home')">home</button></li>
+                    <li><a href="about.html">about</a> </li>
+                    <li><a href="contact.html">contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="home">
+            <section class="firstSection">
+                <div class="leftSection">
+                    <img src="stickerimage.webp" alt="developer">
+                </div>
+                <div class="rightSection">
+                    Hi My name is <span class="purple">Vinayak</span>
+                    <div>I am a passionate</div>
+                    <!-- <div>web developer</div> -->
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <button class="btn1" onclick="gitHub()" >Github</button>
+                        <button class="btn2"  onclick="linkedIn()">Linkdin</button>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <hr>
+        <section class="secondSection">
+            <br>
+            <span class="text-grey">My acadamics performance</span>
+            <h1>Education</h1>
+            <div class="box"></div>
+            <div class="highschool">
+                <span class="scl">SSLC:</span>
+                <div class="school">
+                    Govt High School Bailur
+                </div>
+                <div style="font-size: xx-large; margin-left:150px; margin-top: 60px;">
+                    Uttara Kannada <span class="paragraph-with-space">Percentage: 89.28%</span>
+                  </div>
+                     
+                  
+                </div>
+
+            <div class="highschool">
+                <span class="scl">PUC:</span>
+                <div class="school">R N Shetty P U Collage , Murdeshwar,Karnataka 
+                </div>
+                <div class="percentage">Percentage: 75.50%</div>
+            </div>
+
+            <div class="highschool">
+                <span class="scl">B.E:</span>
+                <div class="school">SDMIT, Ujire
+                </div>
+                <div style="display: flex;
+                justify-content: right;
+                margin-left: 455px;
+            
+                font-size: xx-large;">CGPA(till 5th sem) : 8.04</div>
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_first">
+                <h3>Vinayak portfolio</h3>
+            </div>
+            <div class="footer_second">
+                <ul>
+                    <li>contact: 9353980756</li>
+                    <li>email:vinayakdevadig558@gmail.com</li>
+                    <li>LinkedIn:<a href="https://www.linkedin.com/in/vinayak-k-devadiga">Vinayak K Devadiga</a>
+                    </li>
+                    <li>Home</li>
+                </ul>
+            </div>
+          
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', '& web designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
